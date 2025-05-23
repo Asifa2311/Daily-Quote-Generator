@@ -1,0 +1,89 @@
+/* Reset and basics */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 40px;
+    border-radius: 15px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.quote-box {
+    position: relative;
+    min-height: 140px;
+    margin-bottom: 30px;
+}
+
+.quote-text {
+    font-size: 1.3rem;
+    font-style: italic;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.quote-text.visible {
+    opacity: 1;
+}
+
+.quote-author {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #dcdcdc;
+}
+
+.btn {
+    background: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 6px 12px rgba(255, 107, 107, 0.4);
+}
+
+.btn:hover {
+    background: #ff4757;
+}
+
+@media (max-width: 520px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    .quote-text {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 14px 0;
+    }
+}
